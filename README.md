@@ -1,6 +1,6 @@
 # TalesRunner Database Tool
 An advanced tool coded using VB.NET aimed to help server owners augment their TalesRunner databases remotely.
-**PRE-USE SETUP, PLEASE READ**
+**PRE-USE SETUP, PLEASE READ** (this setup guide is updated as of version 3.0.0)
 
 1. YOU MUST GO INTO THE VB PROJECT AND CHANGE ALL IP ADDRESSES TO YOUR OWN SERVER IP ADDRESS
 
