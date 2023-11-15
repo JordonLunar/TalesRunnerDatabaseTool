@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BE2F41B5-34D8-41A4-8B5F-FE3D0F883CD9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Full_GM_Tool.My.MyApplication</StartupObject>
+    <RootNamespace>Full_GM_Tool</RootNamespace>
+    <AssemblyName>Full GM Tool</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Full GM Tool.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Full GM Tool.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>tr.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="INIControl, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\Desktop\INIControl.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.19.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BanUser.Designer.vb">
+      <DependentUpon>BanUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BanUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CashToAllUsers.Designer.vb">
+      <DependentUpon>CashToAllUsers.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CashToAllUsers.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ChangePieroColour.Designer.vb">
+      <DependentUpon>ChangePieroColour.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePieroColour.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColorPiero.Designer.vb">
+      <DependentUpon>ColorPiero.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ColorPiero.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateAccount.Designer.vb">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CreateAccount.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CustomItems.Designer.vb">
+      <DependentUpon>CustomItems.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CustomItems.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DatabaseInfo.Designer.vb">
+      <DependentUpon>DatabaseInfo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DatabaseInfo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCashForm.Designer.vb">
+      <DependentUpon>EditCashForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditCashForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditExpForm.Designer.vb">
+      <DependentUpon>EditExpForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditExpForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditToolUser.Designer.vb">
+      <DependentUpon>EditToolUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditToolUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTRForm.Designer.vb">
+      <DependentUpon>EditTRForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditTRForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUserForm.Designer.vb">
+      <DependentUpon>EditUserForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EditUserForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ExtraIGN.Designer.vb">
+      <DependentUpon>ExtraIGN.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ExtraIGN.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.vb">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Guild.Designer.vb">
+      <DependentUpon>Guild.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Guild.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MaintainanceTool.Designer.vb">
+      <DependentUpon>MaintainanceTool.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MaintainanceTool.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Search Item ID.Designer.vb">
+      <DependentUpon>Search Item ID.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Search Item ID.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchItem.Designer.vb">
+      <DependentUpon>SearchItem.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SearchItem.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SendGiftForm.Designer.vb">
+      <DependentUpon>SendGiftForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SendGiftForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Storage Gift.Designer.vb">
+      <DependentUpon>Storage Gift.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Storage Gift.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ToolUserManager.Designer.vb">
+      <DependentUpon>ToolUserManager.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ToolUserManager.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UnbanUser.Designer.vb">
+      <DependentUpon>UnbanUser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UnbanUser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="BanUser.resx">
+      <DependentUpon>BanUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CashToAllUsers.resx">
+      <DependentUpon>CashToAllUsers.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangePieroColour.resx">
+      <DependentUpon>ChangePieroColour.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColorPiero.resx">
+      <DependentUpon>ColorPiero.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateAccount.resx">
+      <DependentUpon>CreateAccount.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomItems.resx">
+      <DependentUpon>CustomItems.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DatabaseInfo.resx">
+      <DependentUpon>DatabaseInfo.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCashForm.resx">
+      <DependentUpon>EditCashForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditExpForm.resx">
+      <DependentUpon>EditExpForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditToolUser.resx">
+      <DependentUpon>EditToolUser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTRForm.resx">
+      <DependentUpon>EditTRForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUserForm.resx">
+      <DependentUpon>EditUserForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExtraIGN.resx">
+      <DependentUpon>ExtraIGN.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Guild.resx">
+      <DependentUpon>Guild.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MaintainanceTool.resx">
+      <DependentUpon>MaintainanceTool.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Search Item ID.resx">
+      <DependentUpon>Search Item ID.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SearchItem.resx">
+      <DependentUpon>SearchItem.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SendGiftForm.resx">
+      <DependentUpon>SendGiftForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Storage Gift.resx">
+      <DependentUpon>Storage Gift.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ToolUserManager.resx">
+      <DependentUpon>ToolUserManager.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UnbanUser.resx">
+      <DependentUpon>UnbanUser.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="INIControl.dll" />
+    <Content Include="tr.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
