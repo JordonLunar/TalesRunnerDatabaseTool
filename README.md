@@ -6,7 +6,7 @@ An advanced tool coded using VB.NET aimed to help server owners augment their Ta
 
 2. YOU MUST CREATE A TABLE IN THE DATABASE **'tr_game_db'** CALLED **"tblGMTool"** WITH ROWS CALLED **"fdNick"**, **"fdID"**, **"fdPassword"**, **"fdClearance"**
 
-## 🚀 Features
+## Features
 
 ### User Management
 - **Search & View:** Easily find users by nickname and view their account details.
