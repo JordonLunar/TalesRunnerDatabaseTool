@@ -36,7 +36,7 @@ An advanced tool coded using VB.NET aimed to help server owners augment their Ta
 - **Framework:** .NET Framework (Windows Forms)
 - **Database:** Microsoft SQL Server
 - **Dependencies:** 
-  - `MySql.Data.dll` (for potential MySQL integration)
+  - `MySql.Data.dll` (for MySQL integration)
   - `INIControl.dll` (for configuration management)
   - `BouncyCastle.Crypto.dll`
   - `Renci.SshNet.dll`
